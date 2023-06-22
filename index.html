@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+    <script src="app.js" defer></script>
+</head>
+<body class="body">
+    <main>
+        <div class="toggle" onclick="toggleButton()"><button class="toggle-btn btn-light-mode">dark mode</button></div>
+
+        <div class="header">
+            <div class="title">
+                <h1><span class="my my-light-mode">my</span>
+                    <span class="to-do to-do-light-mode">to-do</span>
+                    <span class="list list-light-mode">list</span></h1>
+                <div class="underline underline-light-mode"></div>
+            </div>
+            <div class="input-continer">
+                <input type="text" id="text-input" placeholder="Enter title" class="input-light-mode">
+                <span  class="addBtn add-light-mode">add</span>
+            </div>
+        </div>
+
+        <div class="clear-filter">
+            <div class="filter filter-light-mode" ><i class="fa-solid fa-filter"></i>
+            <span>filter</span> <span>lists</span></div>
+            <div class="clear clear-light-mode"><i class="fa-solid fa-xmark"></i><span>clear</span><span>completed</span></div>
+        </div>
+
+        <div class="list-container">
+            <h2 id="empty" class="empty-light-mode">Empty list</h2>
+            <ul id="u-list" class="sortable-list">
+            </ul>
+        </div>
+        
+
+    </main>
+
+</body>
+</html>
